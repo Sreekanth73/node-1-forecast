@@ -11,7 +11,7 @@ const forecast = (lat,long,callback) =>{
 		}else if(body.error){
 			callback('Failed to connect. Try another location',undefined)
 		}else{
-			callback(undefined, body.daily.data[0].summary+' It is currently at '+ body.currently.temperature + ' degrees out' + ' There is a ' + body.currently.precipProbability +' % chance of rain' + "Lowest Temperature is "+body.daily.data[0].temperatureLow+" Highest Temperature is "+ body.daily.data[0].temperatureHigh + " .")
+			callback(undefined, body.daily.data[0].summary+' It is currently at '+ body.currently.temperature + ' degrees out' + ' There is a ' + body.currently.precipProbability +' % chance of rain . ' + "Lowest Temperature is "+body.daily.data[0].temperatureLow+" . "+" Highest Temperature is "+ body.daily.data[0].temperatureHigh + " .")
 		}
 	})
 }
