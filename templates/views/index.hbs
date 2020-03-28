@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather</title>
+	<link rel="icon" href="/pics/cloud.jpg">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	{{>header}}
+	 
+	 <p class="wea-p"> {{message}} </p>
+		<form>
+			<input type="text" id=input placeholder="location">
+			<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</form>
+
+		<h2 id="Errror"></h2>
+
+		<p id="forecast"></p>
+		<p id="location" ></p>
+
+
+	{{>footer}}
+	
+<script src="/js/src.js"></script>
+</body>
+</html>
