@@ -1,4 +1,9 @@
 body{
+	background-image: url('/pics/back.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
 	color: #333333;
 	font-family: arial;
 	display: flex;
@@ -29,7 +34,7 @@ h1{
 
 header a{
 	font-size: 30px;
-	color: grey;
+	color: black;
 	text-decoration: none;
 	margin-right: 90px;
 }
