@@ -1,10 +1,4 @@
-console.log('client side recieved ')
 
-// fetch('http://puzzle.mead.io/puzzle').then((response) =>{
-// 	response.json().then((data) =>{
-// 		console.log(data)
-// 	})
-// })
 
 const search = document.querySelector('input')
 
@@ -35,16 +29,4 @@ weather.addEventListener('submit',(e)=>{
 	f()
 })
 
-	// async function f() {
-	// 	const res = await fetch('http://localhost:3000/weather?address= '+location)
-	// 	const result = await res.json()
-	// 	if(result.error){
-	// 		console.log(result.error)
-	// 	}else{
-	// 		console.log(result.forecast)
-	// 		console.log(result.location)
-	// 	}
-	// }
-
-	// f()
 
