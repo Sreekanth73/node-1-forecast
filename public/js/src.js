@@ -14,7 +14,7 @@ weather.addEventListener('submit',(e)=>{
 	searchTerm.textContent = ''
 
 	async function f() {
-		const res = await fetch('http://localhost:3000/weather?address= '+location)
+		const res = await fetch('/weather?address= '+location)
 		const result = await res.json()
 		if(result.error){
 			console.log(result.error)
