@@ -28,7 +28,7 @@ app.get('', (req,res)=>{
 
 app.get('/about',(req,res)=>{
 	res.render('about',{
-		name:'Developer',
+		name:'About',
 		message:'Sreekanth'
 	})
 })
